@@ -1,7 +1,18 @@
-import './utils/svg-sprites';
-
-new (function () {
-  this.modules = {
-    SomeWidget: require('../components/some-component/some-component'),
-  };
-})();
+new Vue({
+    el: '#app',
+    data: () => ({
+        input: '',
+        field: '',
+    }),
+    methods: {
+        content(value) {
+            return (this.field += value);
+        },
+        clearField() {
+            return (this.field = '');
+        },
+        displayfield() {
+            return this.field;
+        },
+    },
+});

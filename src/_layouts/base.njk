@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
   {% block stylesheets %}
-    <link rel="stylesheet" href="/css/tailwind.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    {# <link rel="stylesheet" href="/css/tailwind.css"> #}
+    <link  href="css/styles.css" type="text/css" rel="stylesheet">
   {% endblock stylesheets %}
 </head>
 <body>
@@ -16,6 +16,7 @@
 {% endblock content %}
 
 {% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="/js/bundle.js"></script>
 {% endblock scripts %}
 </body>
